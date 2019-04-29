@@ -1,0 +1,104 @@
+<html>
+	<head>
+		<title>Main Page</title>
+	</head>
+	<style>
+	
+		body{
+			font-family:arial;
+			background:#2D3986;
+			text-align: center;
+		}
+		
+		.nav{
+			background-color: #262626;
+			top: 25%;
+			left:89.56%;
+			height: 50%;
+			width: 160px;
+			position: fixed;
+			float:right;
+		}
+		.nav > ul{
+			 list-style-type: none;
+		}
+		.nav > ul > li{
+			color: #b3b3b3;
+			background-color: #262626;
+			padding: 30px;
+			text-decoration: none;
+			font-size: 16px;
+		}
+		.nav > ul > li > a{
+			color: #b3b3b3;
+			background-color: #262626;
+			text-decoration: none;
+			font-size: 16px;
+		}
+		
+		.nav > ul > li:hover, .nav > ul > li > a:hover{
+			color: white;
+		}
+		
+		.main-page{
+			color: white;
+			padding-top:15%;
+			padding-left:4%;	
+			font-size: 30;
+		}
+		
+		.typewriter{
+			color: #FFF;
+			overflow: hidden;
+			border-right: black; 
+			white-space: nowrap;
+			margin: 0 auto;
+		animation: 
+			typing 10s steps(30, end),
+			blink-caret .5s step-end;
+		}
+		@keyframes typing {
+			from { width: 0 }
+			to { width: 100% }
+		}
+		@keyframes blink-caret {
+			from, to { border-color: transparent }
+			50% { border-color: black }
+		}
+		button{
+			background-color: #2D3986;
+			height: 50;
+			width: 150;
+			color: #e6eeff;
+			border-color: white;
+			font-size:14;
+		}
+		button:hover{
+			color: white;
+			background-color: #0039b3;
+		}
+	</style>
+	<body>
+		<font size = "+1">
+			<div class="nav">
+				<ul>
+					<li><a href = "home.html">Home</a></li>
+					<li><a href = "About.html">About</a></li>
+					<li><a href = "resume.html">Resume</a></li>
+					<li><a href = "Contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class = "main-page">
+				<h1 class = "typewriter">Hafiz Muhammad Aafaq</h1>	
+				<h2>A Friend, Dude and Buddy From Earth</h2>
+			</div>
+			<div class = "btn">
+				<button onclick = "myfunction()">Discover More</button>
+			</div>
+			<script>
+			function myfunction(){
+				window.open("About.html");
+			}
+			</script>
+	</body>
+</html>
